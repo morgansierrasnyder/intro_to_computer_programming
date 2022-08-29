@@ -1,6 +1,6 @@
 ### Intro to Computer Programming
-Teacher: Morgan Snyder
-Nueva Upper School, San Mateo CA
+Teacher: Morgan Snyder \
+Nueva Upper School, San Mateo CA \
 Credit to [Carl Shan](https://github.com/carlshan/intro_to_computer_programming) for original curriculum! :tada:
 
 ### Description
