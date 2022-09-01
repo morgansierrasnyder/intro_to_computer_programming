@@ -20,10 +20,10 @@ This is the repository containing code samples, tutorials, and project starters 
     eval "$(/opt/homebrew/bin/brew shellenv)"` and hit Return
 3. **Install Python 3** by running `brew install python3` in your Terminal.
 4. **Set Python 3 as your default Python version**
-   1. Create a new file by running `vim bash_profile` in your Terminal
+   1. Create a new file by running `vim ~/.bash_profile` in your Terminal
    2. Hit your "i" key to insert text and copy/paste the following in the new file: `alias python="python3"`
    3. Hit the "esc" key to exit insert mode, then type ":wq" (for "write and quit") then hit Return
-   4. Finally, run `source bash_profile` in your Terminal
+   4. Finally, run `source ~/.bash_profile` in your Terminal
 5. **Verify that things work!**
    1. Run `python -v` in your Terminal. You should see that Python 3.9.6 (or higher) is being currently used
    2. Run `brew help` in your Terminal. You should see the documentation of all brew commands!
