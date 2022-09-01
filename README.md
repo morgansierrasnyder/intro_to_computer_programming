@@ -29,7 +29,7 @@ This is the repository containing code samples, tutorials, and project starters 
    2. Run `brew help` in your Terminal. You should see the documentation of all brew commands!
    3. Look at [Troubleshooting](###Troubleshooting) below if these commands are not working as expected
 
-### Troubleshooting
+#### Troubleshooting
 ```zsh: command not found: brew```
 You need to add the `brew` command to your path, so that Terminal recognizes it! Run this is Terminal:
 ```
@@ -40,4 +40,21 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zpro
 ```/nofile.py': [Errno 2] No such file or directory```
 Make sure you are in the directory that your code lives in! You can use `cd <Directory name>` to go to another Directory in your current folder, or `cd ..` to move up a level in the file hierarchy.
     
+## Project 1: Drawing with p5
 
+We'll use p5 for our first project. This library is used for creating visual graphics. Some of you might be familiar with Processing, a visual graphics library in Javascript, and p5 was in fact originally built in Javascript before being translated to Python!
+
+Let's get started by installing p5 on your machine. If you haven't followed the steps to install Homebrew and Python in the [Developer Environment Setup](##Developer Environment Setup) steps, do that **first**!
+
+#### Installing p5
+1. Open your Terminal. Run the following commands by typing them in Terminal, then hit Return.
+1. `pip3 install p5` this will fail; that’s okay
+2. `pip3 install numpy` This installs the latest version of numpy, which is a dependency for p5
+3. `pip3 install freetype-py glfw pillow pyopengl-accelerate requests skia-python vispy` This installs all the dependencies that come after numpy
+4. **Test out that it works!** The p5 library offers many test examples that you can try out [here](https://github.com/p5py/p5-examples) - Bookmark it!
+   1. Copy the code from [snake.py](https://raw.githubusercontent.com/p5py/p5-examples/master/misc/games/snake.py)
+   2. Create a new file in your Terminal `vim snake.py`
+   3. Paste the code into the new snake.py file
+   4. Hit "esc" and close by typing ":wq" and hitting Return
+   5. Run the program by running `python snake.py` in Terminal
+   6. You should get a popup window with the game - hit an arrow key on your keyboard to play!
