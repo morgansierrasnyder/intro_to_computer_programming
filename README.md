@@ -47,11 +47,16 @@ We'll use p5 for our first project. This library is used for creating visual gra
 Let's get started by installing p5 on your machine. If you haven't followed the steps to install Homebrew and Python in the [Developer Environment Setup](##Developer Environment Setup) steps, do that **first**!
 
 #### Installing p5
-1. Open your Terminal. Run the following commands by typing them in Terminal, then hit Return.
-1. `pip3 install p5` this will fail; that’s okay
+Open your Terminal. Run the following commands by typing them in Terminal, then hit Return.
+1. `python3 --version` this should return `3.10.6`
+2. `pip3 install --upgrade pip` to make sure you're on the latest version of the python package installer
+2. `pip3 install p5` this will fail; that’s okay
 2. `pip3 install numpy` This installs the latest version of numpy, which is a dependency for p5
-3. `pip3 install freetype-py glfw pillow pyopengl-accelerate requests skia-python vispy` This installs all the dependencies that come after numpy
-4. **Test out that it works!** The p5 library offers many test examples that you can try out [here](https://github.com/p5py/p5-examples) - Bookmark it!
+3. `pip3 install freetype-py glfw pillow pyopengl-accelerate requests skia-python` This installs most of the dependencies that come after numpy
+4. `pip3 install pyopengl`
+5. `pip3 install vispy`
+6. `pip3 install p5 --no-deps`
+7. **Test out that it works!** The p5 library offers many test examples that you can try out [here](https://github.com/p5py/p5-examples) - Bookmark it!
    1. Copy the code from [snake.py](https://raw.githubusercontent.com/p5py/p5-examples/master/misc/games/snake.py)
    2. Create a new file in your Terminal `vim snake.py`
    3. Paste the code into the new snake.py file
