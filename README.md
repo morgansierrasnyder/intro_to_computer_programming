@@ -54,7 +54,7 @@ Open your Terminal. Run the following commands by typing them in Terminal, then 
 2. `pip3 install numpy` This installs the latest version of numpy, which is a dependency for p5
 3. `pip3 install freetype-py glfw pillow requests skia-python` This installs most of the dependencies that come after numpy
 4. `pip3 install pyopengl`
-5. `pip3 install vispy --user-deprecated=legacy-resolver`
+5. `pip3 install vispy --use-deprecated=legacy-resolver`
 6. `pip3 install p5 --no-deps`
 7. **Test out that it works!** The p5 library offers many test examples that you can try out [here](https://github.com/p5py/p5-examples) - Bookmark it!
    1. Copy the code from [snake.py](https://raw.githubusercontent.com/p5py/p5-examples/master/misc/games/snake.py)
