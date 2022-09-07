@@ -52,7 +52,7 @@ Open your Terminal. Run the following commands by typing them in Terminal, then 
 2. `pip3 install --upgrade pip` to make sure you're on the latest version of the python package installer
 2. `pip3 install p5` this will fail; that’s okay
 2. `pip3 install numpy` This installs the latest version of numpy, which is a dependency for p5
-3. `pip3 install freetype-py glfw pillow pyopengl-accelerate requests skia-python` This installs most of the dependencies that come after numpy
+3. `pip3 install freetype-py glfw pillow requests skia-python` This installs most of the dependencies that come after numpy
 4. `pip3 install pyopengl`
 5. `pip3 install vispy`
 6. `pip3 install p5 --no-deps`
