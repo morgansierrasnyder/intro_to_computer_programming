@@ -9,7 +9,7 @@ Credit to [Carl Shan](https://github.com/carlshan/intro_to_computer_programming)
 This is the repository containing code samples, tutorials, and project starters for the Intro to Computer Programming course at Nueva Upper School.
 
 ## Developer Environment Setup
-We will be programming in Python this semester, a general purpose programming language that is used for building websites, automating tasks, and data analysis, among other things. We will be using a variety of libraries written in Python, which are collections of prewritten Python code that we can use to make large tasks easier, like drawing with [p5](###project-1-drawing-with-p5) for our first project.
+We will be programming in Python this semester, a general purpose programming language that is used for building websites, automating tasks, and data analysis, among other things. We will be using a variety of libraries written in Python, which are collections of prewritten Python code that we can use to make large tasks easier, like [drawing with p5](https://github.com/morgansierrasnyder/intro_to_computer_programming#project-1-drawing-with-p5) for our first project.
 
 Let's start by preparing your computer to run programs using the latest version of Python! \
 ⚠*These directions assume that you have learned basic commands in Terminal, which are covered in [these slides](https://docs.google.com/presentation/d/1CojhIzUy_x16zoKOE_BFhZST0xzP3eFsVbdQRhcbuCk/edit?usp=sharing) or you can look at [this cheatsheet](https://github.com/0nn0/terminal-mac-cheatsheet#core-commands) as a refresher.*
@@ -24,12 +24,12 @@ Let's start by preparing your computer to run programs using the latest version 
     eval "$(/opt/homebrew/bin/brew shellenv)"` and hit Return
 3. **Install Python 3** by running `brew install python3` in your Terminal.
 4. **Set Python 3 as your default Python version**
-   1. Create a new file by running `vim ~/.bash_profile` in your Terminal
+   1. Create a new file by running `vim ~/.zshrc` in your Terminal
    2. Hit your "i" key to insert text and copy/paste the following in the new file: `alias python="python3"`
    3. Hit the "esc" key to exit insert mode, then type ":wq" (for "write and quit") then hit Return
-   4. Finally, run `source ~/.bash_profile` in your Terminal
+   4. Finally, run `source ~/.zshrc` in your Terminal
 5. **Verify that things work!**
-   1. Run `python -v` in your Terminal. You should see that Python 3.9.6 (or higher) is being currently used
+   1. Run `python --version` in your Terminal. You should see that Python 3.9.6 (or higher) is being currently used
    2. Run `brew help` in your Terminal. You should see the documentation of all brew commands!
    3. Look at [Troubleshooting](###Troubleshooting) below if these commands are not working as expected
 
@@ -40,15 +40,15 @@ You need to add the `brew` command to your path, so that Terminal recognizes it!
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
-    
-```/nofile.py': [Errno 2] No such file or directory```
+\
+`/nofile.py': [Errno 2] No such file or directory`
 Make sure you are in the directory that your code lives in! You can use `cd <Directory name>` to go to another Directory in your current folder, or `cd ..` to move up a level in the file hierarchy.
     
 ## Project 1: Drawing with p5
 
 We'll use p5 for our first project. This library is used for creating visual graphics. Some of you might be familiar with Processing, a visual graphics library in Javascript, and p5 was in fact originally built in Javascript using Processing as a foundation before being translated to Python!
 
-Let's get started by installing p5 on your machine. If you haven't followed the steps to install Homebrew and Python in the [Developer Environment Setup](##Developer Environment Setup) steps, do that **first**!
+Let's get started by installing p5 on your machine. If you haven't followed the steps to install Homebrew and Python in the [Developer Environment Setup](https://github.com/morgansierrasnyder/intro_to_computer_programming#developer-environment-setup) steps, do that **first**!
 
 ### Installing p5
 Open your Terminal. Run the following commands by typing them in Terminal, then hit Return.
