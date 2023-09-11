@@ -14,7 +14,7 @@ We will be programming in Python this semester, a general purpose programming la
 Let's start by preparing your computer to run programs using the latest version of Python! \
 ⚠*These directions assume that you have learned basic commands in Terminal, which are covered in [these slides](https://docs.google.com/presentation/d/1CojhIzUy_x16zoKOE_BFhZST0xzP3eFsVbdQRhcbuCk/edit?usp=sharing) or you can look at [this cheatsheet](https://github.com/0nn0/terminal-mac-cheatsheet#core-commands) as a refresher.*
 
-1. **Download a code editor!** I recommend [Visual Studio Code](https://code.visualstudio.com/download) or [Atom](www.atom.io). A code editor is like a programmer's iron man suit - It's a text editor with a bunch of special tools programmers.
+1. **Download a code editor!** Go to [Visual Studio Code](https://code.visualstudio.com/download) and follow the installation instructions. A code editor is like a programmer's iron man suit - It's a text editor with a bunch of special tools programmers.
 2. **Install Homebrew.** Homebrew is a package manager for Mac - it's like your personal code librarian. Instructions are also here: https://brew.sh/
    1. Open your Terminal (command + Space then type Terminal)
    2. Copy and paste the following in your Terminal `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` then hit Return
