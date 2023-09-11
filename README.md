@@ -23,14 +23,14 @@ Let's start by preparing your computer to run programs using the latest version 
    5. When Homebrew is done installing, you should see instructions to add the `% brew` command to your Terminal's path. Run the following command in your Terminal ❗🛑 Replace `<your username>` with YOUR username before you copy and paste the following 🛑❗ : `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"` and hit Return
 3. **Quit and Restart your Terminal**
-4. **Install Python 3** by running `brew install python3` in your Terminal.
-5. **Set Python 3 as your default Python version**
-   1. Create a new file by running `vim ~/.zshrc` in your Terminal
-   2. Hit your "i" key to insert text and copy/paste the following in the new file: `alias python="python3"`
-   3. Hit the "esc" key to exit insert mode, then type ":wq" (for "write and quit") then hit Return
-   4. Finally, run `source ~/.zshrc` in your Terminal
-6. **Verify that things work!**
-   1. Run `python --version` in your Terminal. You should see that Python 3.9.6 (or higher) is being currently used
+4. **Install Python 3**
+   1. `brew install pyenv` install pyenv to manage different Python *env*ironments
+   2. `pyenv install 3.10.6` install python 3.10.6 using pyenv 
+   3. `pyenv global 3.10.6` set 3.10.6 to the default on your computer
+   4. `echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc` to allow pyenv to control the python version during every terminal session. ⚠️ If you get a "file not found" warning for ~/.zshrc, create the file first with `touch ~/.zshrc` then run this command again
+   5. `source ~/.zshrc` to apply your new settings
+5. **Verify that things work!**
+   1. Run `python --version` in your Terminal. You should see that Python 3.10.6 (or higher) is being currently used
    2. Run `brew help` in your Terminal. You should see the documentation of all brew commands!
    3. Look at [Troubleshooting](###Troubleshooting) below if these commands are not working as expected
 
@@ -53,14 +53,14 @@ Let's get started by installing p5 on your machine. If you haven't followed the 
 
 ### Installing p5
 Open your Terminal. Run the following commands by typing them in Terminal, then hit Return.
-1. `python3 --version` this should return `3.10.6`
-2. `pip3 install --upgrade pip` to make sure you're on the latest version of the python package installer
-2. `pip3 install p5` this will fail; that’s okay
-2. `pip3 install numpy` This installs the latest version of numpy, which is a dependency for p5
-3. `pip3 install freetype-py glfw pillow requests skia-python` This installs most of the dependencies that come after numpy
-4. `pip3 install pyopengl`
-5. `pip3 install vispy --use-deprecated=legacy-resolver` If this fails, run `pip3 install cython` and try again!
-6. `pip3 install p5 --no-deps`
+1. `python --version` this should return `3.10.6`
+2. `pip install --upgrade pip` to make sure you're on the latest version of the python package installer
+2. `pip install p5==0.8.0` this will fail; that’s okay
+2. `pip install numpy` This installs the latest version of numpy, which is a dependency for p5
+3. `pip install freetype-py glfw==2.5.4 pillow requests skia-python` This installs most of the dependencies that come after numpy
+4. `pip install pyopengl`
+5. `pip install vispy --use-deprecated=legacy-resolver` If this fails, run `pip install cython` and try again!
+6. `pip install p5==0.8.0 --no-deps`
 7. **Test out that it works!** The p5 library offers many test examples that you can try out [here](https://github.com/p5py/p5-examples) - Bookmark it!
    1. Copy the code from [snake.py](https://raw.githubusercontent.com/p5py/p5-examples/master/misc/games/snake.py)
    2. Create a new file in your Terminal `vim snake.py`
