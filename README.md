@@ -1,5 +1,5 @@
 # Intro to Computer Programming
-<img src="https://yakbots.com/wp-content/uploads/2020/09/hitchhikers-guide-to-the-galaxy-dont-panic.jpg" alt="hitchhikers dont panic" width="600"/>
+<img src="[https://yakbots.com/wp-content/uploads/2020/09/hitchhikers-guide-to-the-galaxy-dont-panic.jpg](https://media.wired.com/photos/5933b7d05321273fc0f91144/master/w_2560%2Cc_limit/dontpanic_1024.jpg)" alt="hitchhikers dont panic" width="600"/>
 
 Teacher: Morgan Snyder \
 Nueva Upper School, San Mateo CA \
