@@ -20,22 +20,23 @@ Let's start by preparing your computer to run programs using the latest version 
    2. Copy and paste the following in your Terminal `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` then hit Return
    3. Enter your password and hit Return (your password will not show up when you type 🙃)
    4. Hit Return again (don't abort 😸)
-   5. When Homebrew is done installing, you should see instructions to add the `% brew` command to your Terminal's path. Run the following command in your Terminal: `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zprofile
+   5. When Homebrew is done installing, you should see instructions to add the `% brew` command to your Terminal's path. Run the following command in your Terminal ❗🛑 Replace `<your username>` with YOUR username before you copy and paste the following 🛑❗ : `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"` and hit Return
-3. **Install Python 3** by running `brew install python3` in your Terminal.
-4. **Set Python 3 as your default Python version**
+3. **Quit and Restart your Terminal**
+4. **Install Python 3** by running `brew install python3` in your Terminal.
+5. **Set Python 3 as your default Python version**
    1. Create a new file by running `vim ~/.zshrc` in your Terminal
    2. Hit your "i" key to insert text and copy/paste the following in the new file: `alias python="python3"`
    3. Hit the "esc" key to exit insert mode, then type ":wq" (for "write and quit") then hit Return
    4. Finally, run `source ~/.zshrc` in your Terminal
-5. **Verify that things work!**
+6. **Verify that things work!**
    1. Run `python --version` in your Terminal. You should see that Python 3.9.6 (or higher) is being currently used
    2. Run `brew help` in your Terminal. You should see the documentation of all brew commands!
    3. Look at [Troubleshooting](###Troubleshooting) below if these commands are not working as expected
 
 #### Troubleshooting
 ```zsh: command not found: brew```
-You need to add the `brew` command to your path, so that Terminal recognizes it! Run this is Terminal:
+You need to add the `brew` command to your path, so that Terminal recognizes it! Run this in Terminal, after your replace `<your username>` with YOUR laptop's username:
 ```
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
