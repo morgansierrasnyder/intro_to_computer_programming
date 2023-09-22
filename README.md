@@ -6,7 +6,7 @@ Credit to [Carl Shan](https://github.com/carlshan/intro_to_computer_programming)
 ### Description
 This is the repository containing code samples, tutorials, and project starters for the Intro to Computer Programming course at Nueva Upper School.
 
-## Developer Environment Setup
+# Developer Environment Setup
 We will be programming in Python this semester, a general purpose programming language that is used for building websites, automating tasks, and data analysis, among other things. We will be using a variety of libraries written in Python, which are collections of prewritten Python code that we can use to make large tasks easier, like [drawing with p5](https://github.com/morgansierrasnyder/intro_to_computer_programming#project-1-drawing-with-p5) for our first project.
 
 Let's start by preparing your computer to run programs using the latest version of Python! \
@@ -33,23 +33,21 @@ Let's start by preparing your computer to run programs using the latest version 
    2. Run `brew help` in your Terminal. You should see the documentation of all brew commands!
    3. Look at [Troubleshooting](###Troubleshooting) below if these commands are not working as expected
 
-#### Troubleshooting
+### Troubleshooting
 ```zsh: command not found: brew```
 You need to add the `brew` command to your path, so that Terminal recognizes it! Run this in Terminal, after your replace `<your username>` with YOUR laptop's username:
 ```
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
-\
 
 `/nofile.py': [Errno 2] No such file or directory`
 Make sure you are in the directory that your code lives in! You can use `cd <Directory name>` to go to another Directory in your current folder, or `cd ..` to move up a level in the file hierarchy.
-\
 
 `no_lzma`
 Try `brew install xz`. After that, you can uninstall and reinstall your Python version by running `brew uninstall <desired python version>` and `<brew install <desired python version>`
     
-## Project 1: Drawing with p5
+# Project 1: Drawing with p5
 
 We'll use p5 for our first project. This library is used for creating visual graphics. Some of you might be familiar with Processing, a visual graphics library in Javascript, and p5 was in fact originally built in Javascript using Processing as a foundation before being translated to Python!
 
@@ -72,9 +70,9 @@ Open your Terminal. Run the following commands by typing them in Terminal, then 
    5. Run the program by running `python3 snake.py` in Terminal
    6. You should get a popup window with the game - hit an arrow key on your keyboard to play!
 
-## Writing and running your first p5 program
+### Writing and running your first p5 program
 
-#### Write your program
+### Write your program
 1. Create a new file in your code editor by going to **File > New** in the top bar or pressing **⌘(command) + N**. Save the file in your Development folder and call it `something.py` or `whateveryouwant.py` - Just sure it has the `.py` at the end so your computer knows it's written in Python.
 
 Every p5 program follows this recipe:
@@ -93,16 +91,16 @@ run()                # the run function begins the program, first calling setup(
 
 You can reference the [p5 documentation](https://p5.readthedocs.io/en/latest/reference/index.html) or look at some of the [p5 code examples](https://github.com/p5py/p5-examples) for ideas.
 
-#### Run your program
+### Run your program
 1. Open Terminal. Use your `cd` and `ls` commands to navigate to the directory that your p5 code is saved in.
 2. Run the Python program `python3 replace_me.py`
 3. Terminate the program by pressing **Ctrl + C** or closing the p5 graphics window. You can also press **⌘(command) + T** to open a new Terminal tab and run your program there (So many p5 windows WOW!)
 
-#### Troubleshooting
+### Troubleshooting
 `NameError: name 'x' is not defined` you are trying to use a variable before you've declared it. add a line to your code before you use `x` that declares its value, such as `x = 42` or `x = "my string"`. \
 `IndentationError: expected an indented block` make sure that you've added code underneath `def setup()` and `def draw()` that is indented. if you're still getting the error, check that the code beneath your `if`, `elif` and `else` statements is indented, check that the code beneath your `for` and `while` loops is indented, check everywhere!
 
-## Project 2: Graphical User Interface (GUI) with Tkinter
+# Project 2: Graphical User Interface (GUI) with Tkinter
 
 For our second project, you'll create a GUI using Tkinter, a Python library with lots of visual widgets (buttons, form fields, labels, and more) to use as building blocks for designing a user interface.
 
@@ -113,7 +111,7 @@ For our second project, you'll create a GUI using Tkinter, a Python library with
 4. Run `pip3 install tk`
 5. Download [jan-ken-po.py](https://drive.google.com/file/d/1mo_P5cTrWKnrpOcwWqWN2faYZoH84F9n/view?usp=sharing) and test if Tkinter works by running `python jan-ken-po.py` -- You should see an interface for playing Rock, Paper, Scissors against the computer!
 
-#### Troubleshooting
+### Troubleshooting
 **Python version < 3.9:** If your Python version is something like `3.8.9`, we'll follow the instructions in [this article](https://opensource.com/article/19/5/python-3-default-mac) to upgrade the default Python version on your computer:
 1. `brew install pyenv` install pyenv to manage different Python *env*ironments
 2. `pyenv install 3.10.6` install python 3.10.6 using pyenv 
