@@ -1,5 +1,5 @@
 # Intro to Computer Programming
-Teacher: Morgan Snyder \
+Teacher: **[Morgan Snyder](https://github.com/morgansierrasnyder)** \
 Nueva Upper School, San Mateo CA \
 Credit to [Carl Shan](https://github.com/carlshan/intro_to_computer_programming) for original curriculum and [Matt Hesby](https://github.com/MattHesby) for the project curriculum! :tada: 
 
