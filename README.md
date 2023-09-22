@@ -16,17 +16,18 @@ Let's start by preparing your computer to run programs using the latest version 
 2. **Install Homebrew.** Homebrew is a package manager for Mac - it's like your personal code librarian. Instructions are also here: https://brew.sh/
    1. Open your Terminal (command + Space then type Terminal)
    2. Copy and paste the following in your Terminal `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` then hit Return
-   3. Enter your password and hit Return (your password will not show up when you type 🙃)
+   3. Enter your password and hit Return (heads up - your password will not show up when you type 🙃)
    4. Hit Return again (don't abort 😸)
    5. When Homebrew is done installing, you should see instructions to add the `% brew` command to your Terminal's path. Run the following command in your Terminal ❗🛑 Replace `<your username>` with YOUR username before you copy and paste the following 🛑❗ : `echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"` and hit Return
 3. **Quit and Restart your Terminal**
 4. **Install Python 3**
    1. `brew install pyenv` install pyenv to manage different Python *env*ironments
-   2. `pyenv install 3.10.6` install python 3.10.6 using pyenv 
-   3. `pyenv global 3.10.6` set 3.10.6 to the default on your computer
-   4. `echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc` to allow pyenv to control the python version during every terminal session. ⚠️ If you get a "file not found" warning for ~/.zshrc, create the file first with `touch ~/.zshrc` then run this command again
-   5. `source ~/.zshrc` to apply your new settings
+   2. `brew install xz` install xz supporting library
+   3. `pyenv install 3.10.6` install python 3.10.6 using pyenv 
+   4. `pyenv global 3.10.6` set 3.10.6 to the default on your computer
+   5. `echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc` to allow pyenv to control the python version during every terminal session. 🛑❗ If you get a "file not found" warning for ~/.zshrc, create the file first with `touch ~/.zshrc` then run this command again
+   6. `source ~/.zshrc` to apply your new settings
 5. **Verify that things work!**
    1. Run `python --version` in your Terminal. You should see that Python 3.10.6 (or higher) is being currently used
    2. Run `brew help` in your Terminal. You should see the documentation of all brew commands!
@@ -40,8 +41,13 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your username>/.zpro
     eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 \
+
 `/nofile.py': [Errno 2] No such file or directory`
 Make sure you are in the directory that your code lives in! You can use `cd <Directory name>` to go to another Directory in your current folder, or `cd ..` to move up a level in the file hierarchy.
+\
+
+`no_lzma`
+Try `brew install xz`. After that, you can uninstall and reinstall your Python version by running `brew uninstall <desired python version>` and `<brew install <desired python version>`
     
 ## Project 1: Drawing with p5
 
@@ -53,7 +59,6 @@ Let's get started by installing p5 on your machine. If you haven't followed the 
 Open your Terminal. Run the following commands by typing them in Terminal, then hit Return.
 1. `python --version` this should return `3.10.6`
 2. `pip install --upgrade pip` to make sure you're on the latest version of the python package installer
-2. `pip install p5==0.8.0` this will fail; that’s okay
 2. `pip install numpy` This installs the latest version of numpy, which is a dependency for p5
 3. `pip install freetype-py glfw==2.5.4 pillow requests skia-python` This installs most of the dependencies that come after numpy
 4. `pip install pyopengl`
