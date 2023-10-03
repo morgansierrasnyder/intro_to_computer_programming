@@ -67,7 +67,7 @@ Open your Terminal. Run the following commands by typing them in Terminal, then 
    2. Create a new file in your Terminal `vim snake.py`
    3. Paste the code into the new snake.py file
    4. Hit "esc" and close by typing ":wq" and hitting Return
-   5. Run the program by running `python3 snake.py` in Terminal
+   5. Run the program by running `python snake.py` in Terminal
    6. You should get a popup window with the game - hit an arrow key on your keyboard to play!
 
 ### Writing and running your first p5 program
