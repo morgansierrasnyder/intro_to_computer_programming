@@ -58,7 +58,7 @@ Open your Terminal. Run the following commands by typing them in Terminal, then 
 1. `python --version` this should return `3.10.6`
 2. `pip install --upgrade pip` to make sure you're on the latest version of the python package installer
 2. `pip install numpy` This installs the latest version of numpy, which is a dependency for p5
-3. `pip install freetype-py glfw==2.5.4 pillow requests skia-python` This installs most of the dependencies that come after numpy
+3. `pip install freetype-py glfw==2.5.4 pillow==9.5.0 requests skia-python` This installs most of the dependencies that come after numpy
 4. `pip install pyopengl`
 5. `pip install vispy --use-deprecated=legacy-resolver` If this fails, run `pip install cython` and try again!
 6. `pip install p5==0.8.0 --no-deps`
