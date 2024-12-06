@@ -106,18 +106,14 @@ For our second project, you'll create a GUI using Tkinter, a Python library with
 
 ### Install Tkinter
 1. Open Terminal
-2. Check your version of Python `python3 --version` (or `python --version` if you aliased python='python3' when doing your [developer environment setup](https://github.com/morgansierrasnyder/intro_to_computer_programming#developer-environment-setup)
-3. If the version of Python is 3.9 or higher, you are good to go! If not, you will need to change the default python version by following the instructions in the "Troubleshooting" section below
-4. Run `pip3 install tk`
-5. Download [jan-ken-po.py](https://drive.google.com/file/d/1mo_P5cTrWKnrpOcwWqWN2faYZoH84F9n/view?usp=sharing) and test if Tkinter works by running `python jan-ken-po.py` -- You should see an interface for playing Rock, Paper, Scissors against the computer!
+2. Install dependencies for Tkinter: `brew install tcl-tk`
+3. Check your version of Python: `python --version`. It's probably on 3.10.6 (or 3.10.something) from using the p5 library. We're going to change the version...
+4. First, create a new folder to store your Tkinter projects, either by (1) running `mkdir tkinter_code` in your terminal or (2) using Finder to create a new folder. Navigate to that folder in the terminal using `cd tkinter_code`
+5. Install Python 3.11.2: `pyenv install 3.11.2`
+6. Switch to the new Python version within this folder: `pyenv local 3.11.2`
+7. Install Tkinter: `pip install tk`
+8. Download [jan-ken-po.py](https://drive.google.com/file/d/1mo_P5cTrWKnrpOcwWqWN2faYZoH84F9n/view?usp=sharing) and test if Tkinter works by running `python jan-ken-po.py` -- You should see an interface for playing Rock, Paper, Scissors against the computer!
 
 ### Troubleshooting
-**Python version < 3.9:** If your Python version is something like `3.8.9`, we'll follow the instructions in [this article](https://opensource.com/article/19/5/python-3-default-mac) to upgrade the default Python version on your computer:
-1. `brew install pyenv` install pyenv to manage different Python *env*ironments
-2. `pyenv install 3.10.6` install python 3.10.6 using pyenv 
-3. `pyenv global 3.10.6` set 3.10.6 to the default on your computer
-4. `echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc` to allow pyenv to control the python version during every terminal session
-   1. If you get a "file not found" warning for ~/.zshrc, create the file with `touch ~/.zshrc`
-5. `source ~/.zshrc` to apply your new settings
-6. `python --version` test it! this should print `3.10.6`
+See these [installation instructions](https://docs.google.com/document/d/1UuGd8kw4S5hK-vaxGbMc1R6qT8Khrh2K1jYOU9BK71Q/edit?usp=sharing) for how to install Tkinter with other versions of Python
 
